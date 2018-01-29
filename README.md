@@ -4,6 +4,8 @@ All credits to awesome teacher Mr. Jose Annunziato(Do follow his youtube channel
 
 I'm currently learning MEAN by developing this project.
 
+It has angularjs as front end with express and node and also uses mongoose library in mongodb.(sorry for my amateur expanation)
+
 I have Created a single page application where we can create posts and see the created posts in the same page and also added usecases for deleting a single post
 
 Now, I'm trying to add a delete all posts, but cant figure out the logic.
