@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en-US" ng-app="BlogApp">
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="app.js"></script>
+		<meta charset = "UTF-8">
+		<title>Title</title>
+	</head>
+
+	<body>
+	<div class="container" ng-controller="BlogController">
+
+		
+		<br>
+		<a class="text-center"><h1>S2A Stories</h1></a>
+
+		<br><br>
+
+		<input ng-model="post.title" class="form-control" placeholder="Story Title" />
+		<textarea ng-model="post.body" class="form-control" placeholder="Story Content"> </textarea>
+		<button ng-click="createPost(post)" class="btn btn-primary btn-block">Post</button>
+
+		<br><br>
+
+		<button ng-click="deleteAllPosts(post._id)" type="button" class="btn btn-danger pull-right">Delete All Posts</button>
+
+		<br><br>
+
+		<br><br>
+
+		<div ng-repeat = "post in posts">
+			<h2>
+				{{post.title}}
+				<a ng-click="deletePost(post._id)" class="pull-right"><i class="fa fa-minus-square" aria-hidden="true"></i></a>
+		
+			</h2>
+			<em>{{post.posted}}</em>
+			<p>{{post.body}}</p>
+		</div>
+	</div>
+	
+
+
+	</body>
+
+
+</html>
+

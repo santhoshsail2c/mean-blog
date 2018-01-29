@@ -1,0 +1,16 @@
+{
+  "name": "mean-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sai Santhosh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.10",
+    "node": "^9.4.0"
+  }
+}
