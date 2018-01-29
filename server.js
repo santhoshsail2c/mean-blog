@@ -25,7 +25,7 @@ app.get("/api/blogpost", getAllPosts);
 app.delete("/api/blogpost/:id",deletePost);
 app.delete("/api/blogpost/",deleteAllPost);
 
-
+//need help in this function
 function deleteAllPost(req,res){
 	var allPostId=req.params.id;
 	PostModel.remove({});
